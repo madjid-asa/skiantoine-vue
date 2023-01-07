@@ -1,28 +1,6 @@
-
-<script>
-export default {
-  data() {
-    return {
-      display: "hours"
-    }
-  },
-  beforeDestroy() {},
-  mounted() {
-    // this.$emit("display", this.display)
-  },
-  methods: {},
-  computed: {},
-  watch:{
-    display: (val, oldVal)=>{
-      // this.$emit("display", val)
-    }
-  }
-}
-</script>
-
 <template>
   <form>
-  <div class="columns">
+    <div class="columns mb-3">
       <div id="displayInput" class="column">
         <div>Unité d'attente</div>
         <div id="control">
@@ -35,11 +13,21 @@ export default {
             Heures
           </label>
           <label class="radio" for="minutes">
-            <input type="radio" id="minutes" value="minutes" v-model="display" />
+            <input
+              type="radio"
+              id="minutes"
+              value="minutes"
+              v-model="display"
+            />
             Minutes
           </label>
           <label class="radio" for="seconds">
-            <input type="radio" id="seconds" value="seconds" v-model="display" />
+            <input
+              type="radio"
+              id="seconds"
+              value="seconds"
+              v-model="display"
+            />
             Secondes
           </label>
         </div>
@@ -48,5 +36,24 @@ export default {
   </form>
 </template>
 
-<style scoped>
-</style>
+<script>
+export default {
+  data() {
+    return {
+      display: "hours",
+    };
+  },
+  beforeDestroy() {},
+  // mounted() {
+  //   this.$emit("display", this.display);
+  // },
+  methods: {},
+  computed: {},
+  watch: {
+    display: function (val, oldVal) {
+      console.log("xatch display", val);
+      this.$emit("display", val);
+    },
+  },
+};
+</script>
