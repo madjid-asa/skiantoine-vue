@@ -21,20 +21,38 @@
   </StepItem>
   <StepItem
     :display="this.display"
-    :startDate="new Date('01/07/2023 14:30')"
+    :startDate="new Date('01/07/2023 13:30')"
     heading="Taxi"
   >
   </StepItem>
   <StepItem
     :display="this.display"
-    :startDate="new Date('01/07/2023 15:30')"
+    :startDate="new Date('01/07/2023 14:30')"
     heading="Arrivée châlet"
+  >
+  </StepItem>
+  <StepItem
+    :display="this.display"
+    :startDate="new Date('01/07/2023 18:00')"
+    heading="Forfait et matos"
   >
   </StepItem>
   <StepItem
     :display="this.display"
     :startDate="new Date('01/08/2023 09:00')"
     heading="Première descente"
+  >
+  </StepItem>
+  <StepItem
+    :display="this.display"
+    :startDate="new Date('01/10/2023 19:30')"
+    heading="Murder party"
+  >
+  </StepItem>
+  <StepItem
+    :display="this.display"
+    :startDate="new Date('01/11/2023 19:30')"
+    heading="Tartiflette"
   >
   </StepItem>
   <StepItem
